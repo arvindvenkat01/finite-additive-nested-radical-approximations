@@ -23,15 +23,18 @@ The research process is separated into three stages, represented by the three ma
 
 ### Prerequisites
 
-You will need Python 3.x and the following libraries:
-*   `numba` (for the exploratory search)
-*   `mpmath` (for high-precision search and analysis)
-*   `pandas` (for the final table generation)
+*   Python `3.12.x`
+*   All required libraries, specified in `requirements.txt`
 
-You can install these dependencies with `pip`:
-```
-pip install numba mpmath pandas
-```
+### Workflow
+
+1.  **Set up the environment:**
+    Create a virtual environment and install the exact dependencies.
+    ```
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    pip install -r requirements.txt
+    ```
 
 ### Workflow
 
