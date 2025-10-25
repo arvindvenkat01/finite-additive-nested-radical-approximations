@@ -120,20 +120,3 @@ pd.set_option('display.width', 140)
 
 print("\n--- Comprehensive Results Table ---")
 print(df_sorted)
-
-"""
-####################### OUTPUT ##########################
-
---- Comprehensive Results Table ---
-  Target                Type Depth             Expression              Coefficients  Complexity (bits)  Correct Digits     Error
-0      e  Zero-Tail Baseline     5  Round(e = exp(1)**32)          [78962960182681]          46.166241              15  3.28e-16
-1      e             Type II     5          sqrt(2 + ...)   [2, 11, 304, 408, 2995]          33.647369              12  2.11e-13
-2      e             Type II     4          sqrt(0 + ...)        [0, 33, 410, 3190]          25.410250              10  3.79e-11
-3      e  Zero-Tail Baseline     4  Round(e = exp(1)**16)                 [8886111]          23.083121               8  9.17e-09
-4      π  Zero-Tail Baseline     5          Round(pi**32)        [8105800789910710]          52.847876              17  4.20e-18
-5      π             Type II     5          sqrt(2 + ...)  [2, 6, 3081, 2193, 1493]          37.626281              13  1.86e-14
-6      π             Type II     4          sqrt(0 + ...)       [0, 46, 2586, 3237]          28.552540               9  1.16e-10
-7      π  Zero-Tail Baseline     4          Round(pi**16)                [90032221]          26.423938               9  3.43e-10
-8      π              Type I     4          sqrt(3 + ...)            [3, 44, 2, 67]          15.164278               6  1.70e-07
-9      π                  CF   N/A                355/113                [355, 113]          15.308623               6  2.67e-07
-"""
