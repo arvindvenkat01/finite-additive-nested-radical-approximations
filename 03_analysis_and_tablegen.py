@@ -60,6 +60,11 @@ results_to_analyze = [
     ("e", E, "Type II", 4, [0, 33, 410, 3190]),
     ("π", PI, "Type I", 4, [3, 44, 2, 67]),
     ("π", PI, "CF", None, [355, 113]),
+
+     # The new, interesting Depth-6 results
+    ("π", mp.pi, "Type II", 6, [0, 63, 1115, 4668, 8199, 6890]),
+    ("e", mp.e, "Type II", 6, [0, 1, 2833, 1521, 3501, 9606]),
+    ("phi", mp.phi, "Type II", 6, [0, 0, 1, 2031, 6818, 6083]), # Assuming 'phi' is defined
 ]
 
 analysis_data = []
