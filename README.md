@@ -63,10 +63,9 @@ finite-nested-radical-approximations/
 ├── 01_nested_radical_search.py         # Main search algorithm
 ├── 02_analysis_and_comparison.py       # Zero-tail baseline analysis
 ├── results/                            # Cached search outputs
-│   ├── search_output_full.txt
-│   └── analysis_comparison.txt
-└── paper/                              # LaTeX source (if included)
-    └── paper_final_reviewer_proof.tex
+    ├── search_output_full.txt
+    └── analysis_comparison.txt
+
 ```
 
 ---
