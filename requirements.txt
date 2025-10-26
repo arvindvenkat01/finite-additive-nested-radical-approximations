@@ -1,7 +1,7 @@
 # Exact dependencies for the paper's computational artifact
 # Python Version: 3.12.12
 
-mpmath==1.3.0
-numpy==2.0.2
-pandas==2.2.2
-numba==0.60.0
+# Core dependencies
+mpmath==1.3.0    # High-precision arithmetic (200-300 digits)
+numpy==2.0.2     # Array operations for Numba nopython mode
+numba==0.60.0    # JIT compilation for fast DFS search
