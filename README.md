@@ -1,4 +1,4 @@
-# Finite Nested Radical Approximations to Mathematical Constants
+# Finite Additive Nested Radical Approximations to Mathematical Constants
 
 **Reproducible computational artifact for the paper:**  
 *"Finite Nested Radical Approximations to Mathematical Constants: A Complexity-Aware Computational Search"*
@@ -7,7 +7,12 @@
 
 ## Overview
 
-This repository contains a systematic computational search for finite nested radical approximations to the mathematical constants π, e, and φ (golden ratio). Using a backward-squaring depth-first search algorithm with high-precision verification (200-300 decimal digits), we discover approximations achieving **12-17 correct decimal digits** at depths 3-6.
+This repository contains a systematic computational search for finite additive nested radical approximations to the mathematical constants π, e, and φ (golden ratio). 
+We call it additive because it of this form:
+```
+√(a₁ + √(a₂ + √(a₃ + ...)))
+```
+Using a backward-squaring depth-first search algorithm with high-precision verification (200-300 decimal digits), we discover approximations achieving **12-17 correct decimal digits** at depths 3-6. 
 
 ### Key Results
 
