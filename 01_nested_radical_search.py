@@ -15,11 +15,10 @@ try:
     from numba import njit
     import numpy as np
     HAS_NUMBA = True
-    print("✓ Numba JIT compiler available - maximum speed mode!")
+    print("Numba JIT compiler available - maximum speed mode!")
 except ImportError:
     HAS_NUMBA = False
-    print("⚠ Numba not found - running in pure Python (slower)")
-    print("  Install for 50-100x speedup: pip install numba")
+    print("Numba not found - running in pure Python (slower)")
     import numpy as np
     def njit(func):
         return func
@@ -29,10 +28,10 @@ try:
     from mpmath import mp
     mp.dps = 100  # 100 decimal places for accurate error measurement
     HAS_MPMATH = True
-    print("✓ mpmath available - high-precision verification enabled")
+    print(" mpmath available - high-precision verification enabled")
 except ImportError:
     HAS_MPMATH = False
-    print("⚠ mpmath not found - will use float64 (less accurate)")
+    print(" mpmath not found - will use float64 (less accurate)")
 
 @njit
 def nested_radical_fast(coeffs, n):
@@ -238,9 +237,9 @@ if __name__ == "__main__":
     
     # Warm up JIT compiler with dummy call
     if HAS_NUMBA:
-        print("\n⏳ Warming up JIT compiler (first run)...")
+        print("\nWarming up JIT compiler (first run)...")
         _ = search_backward_turbo(3.14, 3, 10, 0)
-        print("✓ JIT compilation complete - subsequent searches will be fast!\n")
+        print("JIT compilation complete - subsequent searches will be fast!\n")
     
     targets = [
         ("π", math.pi),
@@ -306,7 +305,7 @@ if __name__ == "__main__":
     # ====================================================================
     
     print("\n" + "="*80)
-    print("⭐ STAR PERFORMERS BY ACCURACY (≥10 correct digits)")
+    print("STAR PERFORMERS BY ACCURACY (≥10 correct digits)")
     print("="*80)
     
     stars = []
@@ -331,7 +330,7 @@ if __name__ == "__main__":
     # ====================================================================
     
     print("\n" + "="*80)
-    print("🏆 BEST BY EFFICIENCY (most digits per bit of complexity)")
+    print("BEST BY EFFICIENCY (most digits per bit of complexity)")
     print("="*80)
     
     all_by_efficiency = []
@@ -355,7 +354,7 @@ if __name__ == "__main__":
     # ====================================================================
     
     print("\n" + "="*80)
-    print("📊 COMPARISON: Your Original Star vs New Best")
+    print("COMPARISON: Your Original Star vs New Best")
     print("="*80)
     
     comparisons = [
@@ -413,9 +412,9 @@ if __name__ == "__main__":
     
     print("\n" + "="*80)
     if HAS_NUMBA and HAS_MPMATH:
-        print("✓ Search complete with numba acceleration and high-precision verification")
+        print("Search complete with numba acceleration and high-precision verification")
     elif HAS_NUMBA:
-        print("✓ Search complete with numba acceleration")
+        print("Search complete with numba acceleration")
     else:
-        print("✓ Search complete")
+        print("Search complete")
     print("="*80)
