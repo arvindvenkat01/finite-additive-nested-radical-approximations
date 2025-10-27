@@ -3,6 +3,13 @@
 **Reproducible computational artifact for the paper:**  
 *"Finite Nested Radical Approximations to Mathematical Constants: A Complexity-Aware Computational Search"*
 
+This work has been archived and assigned a permanent identifier on Zenodo:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17444980.svg)](https://doi.org/10.5281/zenodo.17444980)
+
+
+- DOI: `10.5281/zenodo.17444980`
+- URL: `[https://zenodo.org/records/17444980](https://zenodo.org/records/17444980)`
 
 
 ## Overview
@@ -258,6 +265,26 @@ This is a research artifact accompanying a published paper. For questions, corre
 
 MIT License - see LICENSE file for details.
 Copyright (c) 2025 Arvind N. Venkat
+
+
+---
+
+## Citation
+
+If you use this work, please cite the paper using the Zenodo archive.
+
+@misc{naladiga_venkat_2025_17444980,
+  author       = {Naladiga Venkat, Arvind},
+  title        = {Finite Additive Nested Radical Approximations to
+                   Mathematical Constants: A Complexity-Aware
+                   Computational Search
+                  },
+  month        = oct,
+  year         = 2025,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.17444980},
+  url          = {https://doi.org/10.5281/zenodo.17444980},
+}
 
 ---
 
